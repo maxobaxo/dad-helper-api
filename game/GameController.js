@@ -18,4 +18,12 @@ router.post('/', function(req, res) {
   });
 })
 
+// returns all games in the database
+router.get('/', function(req, res) {
+  Game.find({}, function(err, games) {
+    if (err) return res.status(500).send('There was a problem finding the games.');
+    res.status(200).send(games);
+  });
+});
+
 module.exports = router;
