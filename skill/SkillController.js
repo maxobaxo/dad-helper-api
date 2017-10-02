@@ -9,12 +9,11 @@ var Skill = require('./Skill');
 router.post('/', function(req, res) {
   Skill.create({
     name: req.body.name,
-    id: req.body.id,
   },
   function(err, skill) {
     if (err) return res.status(500).send('There was a problem adding the information to the database.');
   });
-})
+});
 
 // returns all skills in the database
 router.get('/', function(req, res) {

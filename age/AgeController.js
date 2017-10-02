@@ -8,12 +8,13 @@ var Age = require('./Age');
 // creates new Age
 router.post('/', function(req, res) {
   Age.create({
-    "age-range": req.body.name,
+    range: req.body.name,
+    skillIds: req.body.skillIds
   },
   function(err, age) {
     if (err) return res.status(500).send('There was a problem adding the information to the database.');
   });
-})
+});
 
 // returns all ages in the database
 router.get('/', function(req, res) {

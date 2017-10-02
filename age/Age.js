@@ -1,6 +1,7 @@
 var mongoose = require('mongoose');
 var AgeSchema = new mongoose.Schema({
-  "age-range": String,
+  range: String,
+  skillIds: Array
 });
 
 mongoose.model('Age', AgeSchema);
