@@ -1,0 +1,23 @@
+{
+  "name": "dadhelp-api",
+  "version": "1.0.0",
+  "description": "an api to return helpful information for new parents",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dad",
+    "baby",
+    "development",
+    "parenting",
+    "parent"
+  ],
+  "author": "Max Scher",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.1",
+    "mongoose": "^4.11.14"
+  }
+}
