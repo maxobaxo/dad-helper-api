@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var bodyParser = require('body-parser');
 
-router.use(bodyParser.urlencoded({ extender: true }));
+router.use(bodyParser.urlencoded({ extended: true }));
 var Game = require('./Game');
 
 // creates new Game
@@ -39,6 +39,14 @@ router.delete('/:id', function(req, res) {
   Game.findByIdAndRemove(req.params.id, function(err, game) {
     if (err) return res.status(500).send('There was a problem deleting the user.');
     res.status(200).send('Game ' + game.name + ' was deleted.');
+  });
+});
+
+// updates a single game in the database
+router.put('/:id', function(req, res) {
+  Game.findByIdAndUpdate(req.params.id, req.body, {new: true}, function(err, game) {
+    if (err) return res.status(500).send('There was a problem updating the game.');
+    res.status(200).send(game);
   });
 });
 
