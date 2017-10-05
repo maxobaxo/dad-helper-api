@@ -8,7 +8,7 @@ This application is an API which accesses a database hosted at mLab.com.  The ap
 The API is built to process `GET`, `PUSH`, `PUT`, and `DELETE` requests, rounding out basic CRUD functionality.
 
 ## Setup/Installation
-`cd ~/Desktop`
+`cd ~/Desktop`  
 `git clone https://github.com/maxobaxo/dad-helper-api`  
 `cd dad-helper-api`  
 `npm install`  
