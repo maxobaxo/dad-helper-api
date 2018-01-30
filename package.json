@@ -16,8 +16,11 @@
   "author": "Max Scher",
   "license": "ISC",
   "dependencies": {
+    "apollo-server-express": "^1.3.2",
     "body-parser": "^1.18.2",
     "express": "^4.16.1",
+    "graphql": "^0.12.3",
+    "graphql-tools": "^2.19.0",
     "mongoose": "^4.10.8"
   }
 }
