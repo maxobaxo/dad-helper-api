@@ -1,7 +1,7 @@
-var mongoose = require('mongoose');
+var mongoose = require("mongoose");
 var SkillSchema = new mongoose.Schema({
   name: String
 });
-mongoose.model('Skill', SkillSchema);
+var Skill = mongoose.model("Skill", SkillSchema);
 
-module.exports = mongoose.model('Skill');
+module.exports = SkillSchema;

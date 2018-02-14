@@ -18,6 +18,9 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.1",
-    "mongoose": "^4.10.8"
+    "graphql": "^0.13.0",
+    "graphql-tools": "^2.21.0",
+    "mongoose": "^4.10.8",
+    "mongoose-schema-to-graphql": "^2.7.1"
   }
 }
