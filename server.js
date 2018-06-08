@@ -6,8 +6,8 @@ const port = process.env.PORT || 3000;
 app.set("port", port);
 
 const options = {
-  key: fs.readFileSync("/keys/account-key.txt"),
-  cert: fs.readFileSync("/keys/domain-csr.txt")
+  key: fs.readFileSync("/key/account-key.txt"),
+  cert: fs.readFileSync("/key/domain-csr.txt")
 };
 
 const server = https.createServer(options, app);
