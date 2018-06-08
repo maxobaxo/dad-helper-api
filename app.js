@@ -18,4 +18,10 @@ app.use("/skills", SkillController);
 var AgeController = require("./age/AgeController");
 app.use("/ages", AgeController);
 
+var KeyController = require("./key/KeyController");
+app.use(
+  "/.well-known/acme-challenge/7mxzfew8KAwtK1nfZv8p-iRgyDYpwsq9E4ZSsAeunUg",
+  KeyController
+);
+
 module.exports = app;
