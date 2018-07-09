@@ -1,0 +1,9 @@
+{
+  "name": "Dad Helper API",
+  "description":
+    "An API that allows clients to retrieve information relevant to early childhood development",
+  "repository": "https://github.com/maxobaxo/dad-helper-api",
+  "logo": "https://mlab.com/company/brand/resources/mLab-logo-onlight.png",
+  "keywords": ["node", "express", "javascript", "mongodb", "REST", "API"],
+  "addons": ["mongolab"]
+}

@@ -1,4 +1,4 @@
-var app = require("./app");
+var app = require("./public/app");
 var http = require("http");
 var port = process.env.PORT || 3000;
 

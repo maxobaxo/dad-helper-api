@@ -4,20 +4,29 @@
   "description": "an api to return helpful information for new parents",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxobaxo/dad-helper-alt"
   },
   "keywords": [
     "dad",
     "baby",
     "development",
     "parenting",
-    "parent"
+    "parent",
+    "express",
+    "javascript",
+    "mongodb",
+    "API"
   ],
   "author": "Max Scher",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.1",
-    "mongoose": "^4.10.8"
+    "mongodb": "^2.2.19"
   }
 }
