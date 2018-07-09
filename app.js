@@ -1,5 +1,6 @@
 var express = require("express");
 var app = express();
+var db = require("./db");
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
